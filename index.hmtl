@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOUBLE GRAPHIX</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Karim Salifu Designs</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Welcome to Double Graphix</a>
+      <a href="#order">Place Order</a>
+      <a href="#contact">0559278841</a>
+    </nav>
+  </header>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Graphic Design</li>
+      <li>iPrint</li>
+      <li>Artist</li>
+      <li>Hacker</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Showcase of previous works.</p>
+    <!-- https://files.catbox.moe/ww43xw.jpg -->
+  </section>
+
+  <section id="order">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="karimsalifu2740@gmail.com">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="service">Service:</label>
+      <select id="service" required>
+  <option value="graphic_design">Graphic Design</option>
+        <option value="iprint">iPrint</option>
+        <option value="artist">Artist</option>
+        <option value="hacker">Hacker</option>
+      </select>
+
+      <label for="details">Project Details:</label>
+      <textarea id="details" required></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Phone: 0559278841</p>
+    <p>Email: karimsalifu2740@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Double Graphix. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Order submitted successfully!');
+      // Here, you can add code to send form data to your server
+    });
+  </script>
+</body>
+</html>
+```
